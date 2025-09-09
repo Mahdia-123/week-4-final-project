@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=PT+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>🌤 Weather App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="text"
+          placeholder="Enter a city..."
+          autocomplete="off"
+          id="search-input"
+        />
+        <button id="btn">Search</button>
+      </form>
+      <hr class="mt-4" />
+      <div class="date-temperature">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="mt-4" id="cities">Paris</h1>
+            <div class="date-details mt-3">
+              <h4 class="date" id="date"></h4>
+              <p>
+                <span>Humidity: <strong>87%</strong></span
+                >,
+                <span>wind: <strong>7.2km/h</strong></span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="temperature-details">
+              <div class="icon">🌤</div>
+              <div class="temperature mt-4">
+                <span class="temp">24</span><span class="unit">℃</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p>
+        This Project is coded by <a href="">Mahdia Khmoosh</a>and is
+        <a href="/">open sourced</a>
+      </p>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

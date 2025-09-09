@@ -1,0 +1,77 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  padding: 15px;
+  max-width: 600px;
+  margin: 100px auto;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+button {
+  width: 20%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background: #c50d66;
+  font-weight: 500;
+}
+hr {
+  opacity: 0.05;
+}
+h1 {
+  font-size: 38px;
+  font-weight: 700;
+}
+.date-details h4 {
+  color: #686767b7;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.date-details p {
+  color: #686767b7;
+  font-size: 14px;
+  font-weight: 500;
+}
+strong {
+  color: #c50d66;
+}
+.temperature .temp {
+  font-size: 80px;
+  font-weight: 600;
+}
+.temperature .unit {
+  position: relative;
+  top: -30px;
+  font-size: 30px;
+}
+.temperature-details {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -15px;
+}
+.temperature-details .icon {
+  font-size: 40px;
+  position: relative;
+  bottom: -12px;
+  margin-left: 50px;
+}
