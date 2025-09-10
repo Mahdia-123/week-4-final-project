@@ -3,7 +3,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .container {
-  padding: 15px;
+  padding: 25px;
   max-width: 600px;
   margin: 100px auto;
   border: 1px solid #ddd;
@@ -24,7 +24,7 @@ input {
   border-radius: 8px;
 }
 button {
-  width: 20%;
+  width: 25%;
   padding: 12px;
   border: none;
   border-radius: 8px;
@@ -63,15 +63,53 @@ strong {
 }
 .temperature-details {
   display: flex;
-  gap: 10px;
+  gap: 0;
   justify-content: center;
   align-items: center;
   position: relative;
   top: -15px;
+  flex-wrap: wrap;
 }
 .temperature-details .icon {
-  font-size: 40px;
+  height: 80px;
+  width: 80px;
   position: relative;
-  bottom: -12px;
-  margin-left: 50px;
+  bottom: -15px;
+  margin-left: 30px;
+}
+footer p {
+  text-align: center;
+  color: #686767b7;
+}
+footer a {
+  color: #c50d66;
+  cursor: pointer;
+}
+@media (max-width: 960px) {
+  h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .date-details h4 {
+    font-size: 10px;
+  }
+  .date-details p {
+    font-size: 10px;
+  }
+  .temperature .temp {
+    font-size: 50px;
+  }
+  .temperature .unit {
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+  }
+
+  .temperature-details .icon {
+    height: 50px;
+    width: 50px;
+  }
+  body {
+    padding: 10px;
+  }
 }
