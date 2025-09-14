@@ -44,6 +44,28 @@ function displayWeather(response) {
   
 
 `;
+  function displayForecast() {
+    let forecastDays = ["Tue", "Wed", "Thur", "Fri", "Sat"];
+    let forecastHtml = "";
+    forecastDays.forEach(function (forecastDay) {
+      forecastHtml =
+        forecastHtml +
+        ` <div class="weather-forecast-day">
+            <div class="weather-forecast-date">${forecastDay}</div>
+            <div class="weather-forecast-icon">🌤</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature-max">
+                <strong>19º</strong>
+              </div>
+              <div class="weather-forecast-temperature-min">10º</div>
+            </div>
+          </div>`;
+    });
+    let forcast = document.getElementById("forecast");
+    forcast.innerHTML = forecastHtml;
+  }
+
+  displayForecast();
   let moreDetails = document.getElementById("more-details");
   moreDetails.innerHTML = `  <span>Humidity: <strong>${
     response.data.temperature.humidity
